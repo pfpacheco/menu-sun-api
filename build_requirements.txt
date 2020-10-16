@@ -1,0 +1,10 @@
+pytest-cov
+codecov
+pycodestyle
+safety==1.6.1
+python-githooks
+commitizen
+pytz
+mock
+responses
+pytest==5.4.3

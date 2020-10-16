@@ -1,0 +1,116 @@
+{
+    "packageInfo": {
+        "header": {
+            "transactionId": "10112019150922_04GENERATED0383581248",
+            "serviceName": "nrCnpj=17252508000180&ppopcao=55&requisicao=9&opcao=13&idTabela=3&cdPedido=146276&dtPedido=10/10/20198&siteV2=S&unb=0810204&idPedidoFacil=1218945927",
+            "credentials": {
+                "userId": "02009913370",
+                "userDataAttr": {
+                    "unb": "0810204"
+                }
+            },
+            "token": {
+                "signedHash": "H4sIAAAAAAAAAAEQAe/+6L1GRp1zBYpBYdTrs5EXxpYeOECoam0f3tcZOwvLKMrk/jd4yQNc7Gtv\npOyTPY0YLGjaOL6UHI4RmvSbgKQPe8GhTTuif6kCm5TtZeox4ldQ/X4z2GnjuxLyPI+iStS3PM72\neghLdEdEWCjqVuajoF5Z7xgKWdO5E2Coiog8OqVj6QLOFqJ3Q129gMV0yS/Agskuo9aKTJ8U+MkF\nz3rmlqCl6AHaV8ZNvVplSsfoUfEPlTrbhvWbKrZJWDCV5Qca2Q1LrhpWtWgdyFTyItmunss+9ZaW\nvIsmi5euX3cDNtmX5xx9p3t/9mI3QKS1wO/P+0Ms+xpBt+TGPKxTBMQeQ06k2Mq9gG7Ly6ewVLTQ\n/prw2bYQEAEAAA=="
+            }
+        },
+        "body": {
+            "data": {
+                "response": {
+                    "produtos": [
+                        {
+                            "cdProduto": 19520,
+                            "nmProduto": "CHCOLLA KEG30NP",
+                            "nmAbreviado": "CHCOLLA KEG30NP",
+                            "dsUnidadeVenda": "L",
+                            "vlUnitario": 370.8,
+                            "vlTotal": 370.8,
+                            "qtPedido": 1,
+                            "ftPaletizacao": 630,
+                            "dgProd": 6,
+                            "cdPromocao": 0,
+                            "cdCritica": 0,
+                            "dsCritica": "",
+                            "cdCombo": 0,
+                            "idFalta": "N",
+                            "origemPreco": ""
+                        }
+                    ],
+                    "detalhePedido": [
+                        {
+                            "notaFiscal": "-",
+                            "valorTotal": 564.96,
+                            "formaPagto": "BLOQUETO BANCARIO",
+                            "tipoMovimento": "VENDA",
+                            "origem": "Site",
+                            "dataEntrega": "02/10/2019",
+                            "dtVenctoBoleto": "",
+                            "dsStatusGeracao": "Conclu\ufffddo",
+                            "dsSituacaoPedido": "Faturado",
+                            "idSemEstoque": "N",
+                            "idAtribuidoVDI": "N",
+                            "historicoImportacao": [
+                                {
+                                    "data": "01/10/2019",
+                                    "hora": "13:08:36",
+                                    "mensagem": "Importado"
+                                },
+                                {
+                                    "data": "01/10/2019",
+                                    "hora": "15:21:02",
+                                    "mensagem": "Importado"
+                                }
+                            ]
+                        }
+                    ],
+                    "combos": [
+                        {
+                            "cdCombo": 7851,
+                            "nmCombo": "COMBO 7851",
+                            "qtMaximoVenda": 0,
+                            "vlPreco": "194.16",
+                            "qtPedido": 1,
+                            "dtVigenciaFinal": "30/09/2019",
+                            "restricaoVolumes": "S",
+                            "idComboCA": "N",
+                            "idAtendido": "S",
+                            "produtos": [
+                                {
+                                    "cdProduto": 15134,
+                                    "nmProduto": "S ARTOIS OW550C",
+                                    "vlUnitario": "64.72",
+                                    "vlTotal": "64.72",
+                                    "qtPedido": 1,
+                                    "idBonificacao": "",
+                                    "dsMarca": "",
+                                    "dsVasilhame": "",
+                                    "dsVolumeVasilhame": "",
+                                    "dsEmbalagem": "",
+                                    "vlCapacidadeEmbalagem": "00000001200",
+                                    "vlFatorCaixa": "1.05",
+                                    "vlPrecoMin": "64.72",
+                                    "idFalta": "N"
+                                },
+                                {
+                                    "cdProduto": 15134,
+                                    "nmProduto": "S ARTOIS OW550C",
+                                    "vlUnitario": "64.72",
+                                    "vlTotal": "129.44",
+                                    "qtPedido": 2,
+                                    "idBonificacao": "",
+                                    "dsMarca": "",
+                                    "dsVasilhame": "",
+                                    "dsVolumeVasilhame": "",
+                                    "dsEmbalagem": "",
+                                    "vlCapacidadeEmbalagem": "00000001200",
+                                    "vlFatorCaixa": "1.05",
+                                    "vlPrecoMin": "64.72",
+                                    "idFalta": "N"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            }
+        }
+    }
+}

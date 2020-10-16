@@ -1,0 +1,26 @@
+[
+    {
+        "document": null,
+        "postalCode": null,
+        "paymentCode": "0021",
+        "sku": "000000000000044601",
+        "name": null,
+        "itemCategory": null,
+        "saleOrganization": "1816",
+        "distributionChannel": "10",
+        "activitySector": null,
+        "beginValidDate": 20170502,
+        "endValidDate": 99991231,
+        "basePriceMeasurementUnit": "KG",
+        "basePrice": 11.02,
+        "finalPriceMeasurementUnit": "CX",
+        "finalPricePercentage": 0,
+        "finalPrice": 39.67,
+        "discountPercentage": 0,
+        "discountPrice": 39.67,
+        "maximumPercentage": 0,
+        "maximumPrice": 39.67,
+        "minimumPercentage": 0,
+        "minimumPrice": 39.67
+    }
+]

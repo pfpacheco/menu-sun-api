@@ -1,0 +1,11 @@
+{
+  "customerCode": "05",
+  "statusText": "Cliente não OK",
+  "request": 10728,
+  "creditLimit": 103240.72,
+  "paymentCode": "021",
+  "paymentDescription": "Pagamento com 21 dias com Boleto Bancário",
+  "cdd": "",
+  "grade": "",
+  "lastBillingDate": ""
+}

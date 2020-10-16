@@ -1,0 +1,6 @@
+{
+  "refresh_token": "EEEE",
+  "token_type": "bearer",
+  "access_token": "DDDD",
+  "expires_in": 7200
+}

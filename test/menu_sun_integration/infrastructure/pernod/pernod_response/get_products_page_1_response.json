@@ -1,0 +1,199 @@
+{
+  "error": "",
+  "data": {
+    "list": [
+      {
+        "salesChannel": 112,
+        "sku": "CP-Azul-P",
+        "marketplaceSKU": "CP-Azul-P",
+        "parentSKU": "CP",
+        "name": "Camisa polo Azul",
+        "description": "",
+        "ean13": "1230000000001",
+        "brand": "Marca",
+        "height": "0.1",
+        "width": "0.3",
+        "length": "0.5",
+        "dimensionUnit": "Meter",
+        "weightKg": "0.2",
+        "warrantyMonths": "0",
+        "videoURL": "",
+        "status": "Synchronized",
+        "statusMessage": "",
+        "productType": "Simple",
+        "productURL": "http://www.dominiodasualoja.com.br/anuncio-da-camisa-polo",
+        "listingType": "None",
+        "sourceId": "25831613",
+        "marketplaceId": "0",
+        "category": "1.1.1",
+        "ncm": "",
+        "priceBase": "129",
+        "priceSale": "119",
+        "priceCurrency": "BRL",
+        "handlingTime": "0",
+        "stock": "99",
+        "images": [
+          {
+            "url": "http://www.dominiodasualoja.com.br/imagem-da-camisa-polo-1"
+          },
+          {
+            "url": "http://www.dominiodasualoja.com.br/imagem-da-camisa-polo-2"
+          },
+          {
+            "url": "http://www.dominiodasualoja.com.br/imagem-da-camisa-polo-3"
+          },
+          {
+            "url": "http://www.dominiodasualoja.com.br/imagem-da-camisa-polo-4"
+          }
+        ],
+        "specifications": [
+          {
+            "name": "Cor",
+            "value": "Azul",
+            "type": "Specification"
+          },
+          {
+            "name": "Tamanho",
+            "value": "P",
+            "type": "Specification"
+          },
+          {
+            "name": "Gênero",
+            "value": "Masculino",
+            "type": "Specification"
+          }
+        ]
+      },
+      {
+        "salesChannel": 112,
+        "sku": "CP-Azul-M",
+        "marketplaceSKU": "CP-Azul-M",
+        "parentSKU": "CP",
+        "name": "Camisa polo Azul",
+        "description": "",
+        "ean13": "1230000000002",
+        "brand": "Marca",
+        "height": "0.1",
+        "width": "0.3",
+        "length": "0.5",
+        "dimensionUnit": "Meter",
+        "weightKg": "0.2",
+        "warrantyMonths": "0",
+        "videoURL": "",
+        "status": "Synchronized",
+        "statusMessage": "",
+        "productType": "Simple",
+        "productURL": "http://www.dominiodasualoja.com.br/anuncio-da-camisa-polo",
+        "listingType": "None",
+        "sourceId": "25831614",
+        "marketplaceId": "0",
+        "category": "1.1.1",
+        "ncm": "",
+        "priceBase": "129",
+        "priceSale": "119",
+        "priceCurrency": "BRL",
+        "handlingTime": "0",
+        "stock": "99",
+        "images": [
+          {
+            "url": "http://www.dominiodasualoja.com.br/imagem-da-camisa-polo-1"
+          },
+          {
+            "url": "http://www.dominiodasualoja.com.br/imagem-da-camisa-polo-2"
+          },
+          {
+            "url": "http://www.dominiodasualoja.com.br/imagem-da-camisa-polo-3"
+          },
+          {
+            "url": "http://www.dominiodasualoja.com.br/imagem-da-camisa-polo-4"
+          }
+        ],
+        "specifications": [
+          {
+            "name": "Cor",
+            "value": "Azul",
+            "type": "Specification"
+          },
+          {
+            "name": "Tamanho",
+            "value": "M",
+            "type": "Specification"
+          },
+          {
+            "name": "Gênero",
+            "value": "Masculino",
+            "type": "Specification"
+          }
+        ]
+      },
+      {
+        "salesChannel": 112,
+        "sku": "CP-Azul-G",
+        "marketplaceSKU": "CP-Azul-G",
+        "parentSKU": "CP",
+        "name": "Camisa polo Azul",
+        "description": "",
+        "ean13": "1230000000003",
+        "brand": "Marca",
+        "height": "0.1",
+        "width": "0.3",
+        "length": "0.5",
+        "dimensionUnit": "Meter",
+        "weightKg": "0.2",
+        "warrantyMonths": "0",
+        "videoURL": "",
+        "status": "Synchronized",
+        "statusMessage": "",
+        "productType": "Simple",
+        "productURL": "http://www.dominiodasualoja.com.br/anuncio-da-camisa-polo",
+        "listingType": "None",
+        "sourceId": "25831615",
+        "marketplaceId": "0",
+        "category": "1.1.1",
+        "ncm": "",
+        "priceBase": "129",
+        "priceSale": "119",
+        "priceCurrency": "BRL",
+        "handlingTime": "0",
+        "stock": "99",
+        "images": [
+          {
+            "url": "http://www.dominiodasualoja.com.br/imagem-da-camisa-polo-1"
+          },
+          {
+            "url": "http://www.dominiodasualoja.com.br/imagem-da-camisa-polo-2"
+          },
+          {
+            "url": "http://www.dominiodasualoja.com.br/imagem-da-camisa-polo-3"
+          },
+          {
+            "url": "http://www.dominiodasualoja.com.br/imagem-da-camisa-polo-4"
+          }
+        ],
+        "specifications": [
+          {
+            "name": "Cor",
+            "value": "Azul",
+            "type": "Specification"
+          },
+          {
+            "name": "Tamanho",
+            "value": "G",
+            "type": "Specification"
+          },
+          {
+            "name": "Gênero",
+            "value": "Masculino",
+            "type": "Specification"
+          }
+        ]
+      }
+    ],
+    "paging": {
+      "total": 6,
+      "pages": 2,
+      "currentPage": 1,
+      "perPage": 3
+    }
+  }
+}

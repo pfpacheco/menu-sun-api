@@ -1,0 +1,74 @@
+{
+    "packageInfo": {
+        "header": {
+            "transactionId": "31032020163858_04GENERATED0031931808",
+            "serviceName": "nrCnpj=04733070000100&ppopcao=55&idTabela=3&idPedidoFacil=M2000005650&requisicao=9&opcao=12&idEntregue=S&idAberto=S&idFaturado=S&idAgendado=S&siteV2=S&unb=0810301&Usuario=menucomvc",
+            "credentials": {
+                "userId": "04733070000100",
+                "userDataAttr": {
+                    "unb": "0810301"
+                }
+            },
+            "token": {
+                "signedHash": "H4sIAAAAAAAAAAEQAe/+6L1GRp1zBYpBYdTrs5EXxpYeOECoam0f3tcZOwvLKModwD9tPtjIlp9S\nf2A9yU309F1Nq7/0izFadoktzDtfpMGhTTuif6kCm5TtZeox4ldQ/X4z2GnjuxLyPI+iStS3PM72\neghLdEdEWCjqVuajoF5Z7xgKWdO5E2Coiog8OqVj6QLOFqJ3Q129gMV0yS/Agskuo9aKTJ8U+MkF\nz3rmlqCl6AHaV8ZNvVplSsfoUfEPlTrbhvWbKrZJWDCV5Qca2Q1LrhpWtWgdyFTyItmunss+9ZaW\nvIsmi5euX3cDNtmX5xx9p3t/9mI3QKS1wO/P+0Ms+xpBt+TGPKxTBMQeQ06k2Mq9gG7Ly6ewVLTQ\n/prcCJ4kEAEAAA=="
+            }
+        },
+        "body": {
+            "data": {
+                "response": {
+                    "urlMDM": [
+                        {
+                            "cdUNB": "0030301",
+                            "url": "http://192.168.10.72/WS/Servico.svc/mobileWeb/BuscarPosicoesVeiculoPedido"
+                        }
+                    ],
+                    "historico": [
+                        {
+                            "idPedidoFacil": 4000005650,
+                            "idTabela": 3,
+                            "cdPedido": 0,
+                            "idOrigemPedido": "Site",
+                            "dataPedido": "18/03/2020",
+                            "dataEntrega": "20/03/2020",
+                            "situacao": "F",
+                            "valorTotal": 2355.9,
+                            "valorTotalOriginal": 2355.9,
+                            "setor": 321,
+                            "idPermiteEditar": "N",
+                            "cdCondicaoPagto": 123,
+                            "dsCondicaoPagto": "BOLETO 3 DIAS (SEM ADF)",
+                            "calculaADF": "N",
+                            "taxaMensalADF": 0.0,
+                            "diasVencimento": 3,
+                            "cdOperacao": 1,
+                            "dsOperacao": "Venda",
+                            "txForaRota": 0.0,
+                            "idForcarStatusPedido": "$",
+                            "cdAlcada": 0,
+                            "recorrente": false,
+                            "pedidos": [
+                                {
+                                    "cdPedidoPromax": 591560,
+                                    "situacaoPedido": "faturado",
+                                    "vlPedido": 2355.9,
+                                    "nrNota": 196801,
+                                    "srNota": "022",
+                                    "vlNota": 2355.9,
+                                    "idNotaCancelada": "N",
+                                    "idNotaDevolvida": "S",
+                                    "dsMotivoNaoEntrega": "60 - O seu pedido n&atilde;o ser&aacute; entregue e nem cobrado",
+                                    "idSituacaoTitulo": "I",
+                                    "dtVencto": "",
+                                    "idAcompanhar": "N",
+                                    "cdEmpresaFaturamento": "081",
+                                    "cdFilialFaturamento": "0301",
+                                    "nrMapa": 136912
+                                }
+                            ]
+                        }
+                    ]
+                }
+            }
+        }
+    }
+}

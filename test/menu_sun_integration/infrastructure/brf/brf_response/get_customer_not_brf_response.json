@@ -1,0 +1,11 @@
+{
+    "customerCode": "99",
+    "statusText": "Cliente não cadastrado na BRF",
+    "request": 1288920,
+    "creditLimit": 0.00,
+    "paymentCode": null,
+    "paymentDescription": null,
+    "cdd": null,
+    "grade": null,
+    "lastBillingDate": null
+}

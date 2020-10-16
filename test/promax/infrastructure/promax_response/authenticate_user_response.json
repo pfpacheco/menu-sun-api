@@ -1,0 +1,24 @@
+{
+    "packageInfo": {
+        "header": {
+            "transactionId": "10112019144733_04A_GENERATED0156780592XXX",
+            "bodyType": "application/json",
+            "credentials": {
+                "expirationDate": "2019-11-11T14:47:33.080-0200",
+                "userId": "30005239000115",
+                "userType": "PDV",
+                "userDataAttr": {
+                    "unb": "0030135",
+                    "userPF": "S",
+                    "clienteAmbev": "S",
+                    "unbs": [
+                        "0030135"
+                    ]
+                }
+            },
+            "token": {
+                "signedHash": "H4sIAAAAAAAAAAEQAe/+6L1GRp1zBYpBYdTrs5EXxpYeOECoam0f3tcZOwvLKMrk/jd4yQNc7Jy0\n+I9lH++MFX80aJACV1wgdcVt+Mgr1sGhTTuif6kCm5TtZeox4ldQ/X4z2GnjuxLyPI+iStS3PM72\neghLdEdEWCjqVuajoF5Z7xgKWdO5E2Coiog8OqVj6QLOFqJ3Q129gMV0yS/Agskuo9aKTJ8U+MkF\nz3rmlqCl6AHaV8ZNvVplSsfoUfEPlTrbhvWbKrZJWDCV5Qca2Q1LrhpWtWgdyFTyItmunss+9ZaW\nvIsmi5euX3cDNtmX5xx9p3t/9mI3QKS1wO/P+0Ms+xpBt+TGPKxTBMQeQ06k2Mq9gG7Ly6ewVLTQ\n/prkPs9BEAEAAA=="
+            }
+        }
+    }
+}

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+<soap:Body><SeparacaoResponse xmlns="http://ws.serbom.com.br:5763/wsserbom_hom/">
+<SeparacaoResult><StrCodigo>200</StrCodigo><StrMensagem>OK</StrMensagem>
+</SeparacaoResult></SeparacaoResponse>
+</soap:Body></soap:Envelope>

@@ -1,0 +1,331 @@
+# Welcome to Serverless!
+#
+# This file is the main config file for your service.
+# It's very minimal at this point and uses default values.
+# You can always add more config options for more control.
+# We've included some commented out config examples here.
+# Just uncomment any of them to get that config option.
+#
+# For full config options, check the docs:
+#    docs.serverless.com
+#
+# Happy Coding!
+
+service: menu-sun-api # NOTE: update this with your service name
+
+# You can pin your service to only deploy with a specific Serverless version
+# Check out our docs for more details
+# frameworkVersion: "=X.X.X"
+provider:
+  name: aws
+  memorySize: 2048
+  runtime: python3.6
+  versionFunctions: false
+  environment:
+    DB_USER: ${env:DB_USER}
+    DB_PASSWORD: ${env:DB_PASSWORD}
+    DB_HOST: ${env:DB_HOST}
+    DB_PORT: ${env:DB_PORT}
+    DB_NAME: ${env:DB_NAME}
+    ORDER_QUEUE_URL: ${env:ORDER_QUEUE_URL}
+    INVENTORY_QUEUE_URL: ${env:INVENTORY_QUEUE_URL}
+    PRODUCT_QUEUE_URL: ${env:PRODUCT_QUEUE_URL}
+    CUSTOMER_QUEUE_URL: ${env:CUSTOMER_QUEUE_URL}
+    PRICING_QUEUE_URL: ${env:PRICING_QUEUE_URL}
+    DEFAULT_PRICING_QUEUE_URL: ${env:DEFAULT_PRICING_QUEUE_URL}
+    INVENTORY_BY_SKU_QUEUE_URL: ${env:INVENTORY_BY_SKU_QUEUE_URL}
+    PRICING_BY_SKU_QUEUE_URL: ${env:PRICING_BY_SKU_QUEUE_URL}
+    PROMAX_PASSWORD: ${env:PROMAX_PASSWORD}
+    PROMAX_USER_ID: ${env:PROMAX_USER_ID}
+    PROMAX_IP: ${env:PROMAX_IP}
+    ORDER_STATUS_WEBHOOK: ${env:ORDER_STATUS_WEBHOOK}
+    PERNOD_API_URL: ${env:PERNOD_API_URL}
+    PERNOD_CLIENT_ID: ${env:PERNOD_CLIENT_ID}
+    PERNOD_CLIENT_SECRET: ${env:PERNOD_CLIENT_SECRET}
+    PERNOD_MENU_USERNAME: ${env:PERNOD_MENU_USERNAME}
+    PERNOD_MENU_PASSWORD: ${env:PERNOD_MENU_PASSWORD}
+    PERNOD_PRODUCT_API_URL: ${env:PERNOD_PRODUCT_API_URL}
+    PERNOD_PRODUCT_API_TOKEN: ${env:PERNOD_PRODUCT_API_TOKEN}
+    PERNOD_PRODUCT_API_PAGE_SIZE: ${env:PERNOD_PRODUCT_API_PAGE_SIZE}
+    PERNOD_ID_TENANT: ${env:PERNOD_ID_TENANT}
+    BRF_API_URL: ${env:BRF_API_URL}
+    BRF_API_KEY: ${env:BRF_API_KEY}
+    SERBOM_TOKEN: ${env:SERBOM_TOKEN}
+    URL_SEPARATION_SERBOM: ${env:URL_SEPARATION_SERBOM}
+    SOAPACTION_SERBOM: ${env:SOAPACTION_SERBOM}
+    DOCUMENT_ARYZTA: ${env:DOCUMENT_ARYZTA}
+    DOCUMENT_BENJAMIN: ${env:DOCUMENT_BENJAMIN}
+    ARYZTA_BUCKET: ${env:ARYZTA_BUCKET}
+    BENJAMIN_BUCKET: ${env:BENJAMIN_BUCKET}
+    ORDER_STATUS_QUEUE_URL: ${env:ORDER_STATUS_QUEUE_URL}
+    ORDER_STATUS_NOTIFICATION_QUEUE_URL: ${env:ORDER_STATUS_NOTIFICATION_QUEUE_URL}
+
+  vpc:
+    securityGroupIds:
+      - ${env:LAMBDA_SECURITY_GROUP}
+    subnetIds:
+      - ${env:SUBNET_A}
+      - ${env:SUBNET_B}
+  iamRoleStatements:
+    - Effect: Allow
+      Action:
+        - sns:*
+        - sqs:*
+        - s3:*
+      Resource: "*"
+
+  # you can overwrite defaults here
+  #  stage: dev
+  region: us-west-2
+
+# you can add statements to the Lambda function's IAM Role here
+#  iamRoleStatements:
+#    - Effect: "Allow"
+#      Action:
+#        - "s3:ListBucket"
+#      Resource: { "Fn::Join" : ["", ["arn:aws:s3:::", { "Ref" : "ServerlessDeploymentBucket" } ] ]  }
+#    - Effect: "Allow"
+#      Action:
+#        - "s3:PutObject"
+#      Resource:
+#        Fn::Join:
+#          - ""
+#          - - "arn:aws:s3:::"
+#            - "Ref" : "ServerlessDeploymentBucket"
+#            - "/*"
+
+# you can define service wide environment variables here
+#  environment:
+#    variable1: value1
+
+# you can add packaging information here
+#package:
+#  include:
+#    - include-me.py
+#    - include-me-dir/**
+#  exclude:
+#    - exclude-me.py
+#    - exclude-me-dir/**
+
+functions:
+  createNotification:
+    handler: menu_public_api/notification/create_notification_handler.handle
+    events:
+      - http:
+          path: notification
+          method: POST
+  customerCreate:
+    handler: menu_public_api/customer/create_customer_handler.handle
+    events:
+      - http:
+          path: customer
+          method: POST
+
+  customerUpdate:
+    handler: menu_public_api/customer/update_customer_handler.handle
+    events:
+      - http:
+          path: customer
+          method: PUT
+
+  getCustomer:
+    handler: menu_public_api/customer/get_customer_handler.handle
+    events:
+      - http:
+          path: customer
+          method: GET
+
+  orderCancel:
+    handler: menu_public_api/order/cancel_status_handler.handle
+    events:
+      - http:
+          path: order/cancel
+          method: POST
+
+  getOrder:
+    handler: menu_public_api/order/get_order_handler.handle
+    events:
+      - http:
+          path: order
+          method: GET
+
+  orderGetByStatus:
+    handler: menu_public_api/order/order_get_by_status_handler.handle
+    events:
+      - http:
+          path: orders
+          method: GET
+
+  createOrderStatus:
+    handler: menu_public_api/order/create_order_status_handler.handle
+    events:
+      - http:
+          path: order/status
+          method: POST
+
+  #product menu_public_api endpoint
+  createPricing:
+    handler: menu_public_api/product/create_pricing_handler.handle
+    events:
+      - http:
+          path: pricing
+          method: POST
+
+  getPricing:
+    handler: menu_public_api/product/get_pricing_handler.handle
+    events:
+      - http:
+          path: pricing
+          method: GET
+
+  updatePricing:
+    handler: menu_public_api/product/update_pricing_handler.handle
+    events:
+      - http:
+          path: pricing
+          method: PUT
+
+  productBulkUpsert:
+    handler: menu_public_api/product/product_bulk_upsert_handler.handle
+    events:
+      - http:
+          path: products
+          method: POST
+      - http:
+          path: products
+          method: PUT
+      - http:
+          path: product/bulk/upsert
+          method: PUT
+
+  getProduct:
+    handler: menu_public_api/product/get_product_handler.handle
+    events:
+      - http:
+          path: product
+          method: GET
+
+  graphql:
+    timeout: 30
+    handler: menu_sun_api/interfaces/handler.handle
+    events:
+      - http:
+          path: graphql
+          method: POST
+
+  enqueueCustomer:
+    timeout: 900
+    handler: menu_sun_integration/handlers/enqueue_customer_handler.handler
+    reservedConcurrency: 1
+    events:
+      - schedule: rate(30 minutes)
+
+  dequeueCustomer:
+    timeout: 120
+    memorySize: 3008
+    handler: menu_sun_integration/handlers/dequeue_customer_handler.handler
+    reservedConcurrency: 4
+    events:
+      - schedule: rate(2 minutes)
+
+  enqueueInventories:
+    timeout: 900
+    handler: menu_sun_integration/handlers/enqueue_inventories_handler.handler
+    reservedConcurrency: 1
+    events:
+      - schedule: rate(30 minutes)
+
+  dequeueInventories:
+    timeout: 120
+    memorySize: 3008
+    handler: menu_sun_integration/handlers/dequeue_inventories_handler.handler
+    reservedConcurrency: 4
+    events:
+      - schedule: rate(2 minutes)
+
+  enqueueOrder:
+    timeout: 300
+    handler: menu_sun_integration/handlers/enqueue_order_handler.handler
+    reservedConcurrency: 1
+    events:
+      - schedule: rate(5 minutes)
+
+  dequeueOrder:
+    timeout: 120
+    memorySize: 3008
+    handler: menu_sun_integration/handlers/dequeue_order_handler.handler
+    reservedConcurrency: 1
+    events:
+      - schedule: rate(2 minutes)
+
+  enqueueCustomerPricing:
+    timeout: 900
+    handler: menu_sun_integration/handlers/enqueue_customer_pricing_handler.handler
+    reservedConcurrency: 1
+    events:
+      - schedule: rate(30 minutes)
+
+  dequeueCustomerPricing:
+    timeout: 120
+    memorySize: 3008
+    handler: menu_sun_integration/handlers/dequeue_customer_pricing_handler.handler
+    reservedConcurrency: 4
+    events:
+      - schedule: rate(2 minutes)
+
+  enqueueProductDefaultPricing:
+    timeout: 900
+    handler: menu_sun_integration/handlers/enqueue_product_default_pricing_handler.handler
+    reservedConcurrency: 1
+    events:
+      - schedule: rate(30 minutes)
+
+  dequeueProductDefaultPricing:
+    timeout: 120
+    memorySize: 3008
+    handler: menu_sun_integration/handlers/dequeue_product_default_pricing_handler.handler
+    reservedConcurrency: 4
+    events:
+      - schedule: rate(2 minutes)
+
+  enqueueProduct:
+    timeout: 900
+    handler: menu_sun_integration/handlers/enqueue_product_handler.handler
+    reservedConcurrency: 1
+    events:
+      - schedule: rate(30 minutes)
+
+  dequeueProduct:
+    timeout: 120
+    memorySize: 3008
+    handler: menu_sun_integration/handlers/dequeue_product_handler.handler
+    reservedConcurrency: 4
+    events:
+      - schedule: rate(2 minutes)
+
+  dequeueInventoryBySku:
+    timeout: 60
+    memorySize: 3008
+    handler: menu_sun_integration/handlers/dequeue_inventory_handler.handler
+    reservedConcurrency: 4
+
+  dequeueOrderStatusNotification:
+    timeout: 120
+    memorySize: 3008
+    handler: menu_sun_integration/handlers/dequeue_order_status_notification_handler.handler
+    reservedConcurrency: 4
+
+  enqueueOrderStatus:
+    timeout: 300
+    handler: menu_sun_integration/handlers/enqueue_order_status_handler.handler
+    reservedConcurrency: 1
+    events:
+      - schedule: rate(5 minutes)
+
+  dequeueOrderStatus:
+    timeout: 120
+    memorySize: 3008
+    handler: menu_sun_integration/handlers/dequeue_order_status_handler.handler
+    reservedConcurrency: 4
+    events:
+      - schedule: rate(2 minutes)

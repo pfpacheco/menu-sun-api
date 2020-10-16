@@ -1,0 +1,11 @@
+{
+  "customerCode": "01",
+  "statusText": "Cliente já existe OK na BRF",
+  "request": 10728,
+  "creditLimit": 103240.72,
+  "paymentCode": "007",
+  "paymentDescription": "Pagamento com 07 dias com Boleto Bancário",
+  "cdd": "ABC",
+  "grade": "Seg,Qua,Sex,",
+  "lastBillingDate": "20190105"
+}

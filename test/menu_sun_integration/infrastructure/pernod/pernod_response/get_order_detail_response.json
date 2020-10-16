@@ -1,0 +1,68 @@
+{
+  "reference": {
+    "id": 1,
+    "idTenant": 2585,
+    "store": "Menu",
+    "source": "123456",
+    "system": {
+      "source": "Menu"
+    }
+  },
+  "shipping": {
+    "responsible": "seller",
+    "receiverName": "ShippingStreet",
+    "address": {
+      "address": "Shipping Street",
+      "neighborhood": "Shipping Street",
+      "city": "Shipping Street",
+      "state": "Shipping Street",
+      "country": "Shipping Street",
+      "zipCode": "Shipping Street",
+      "additionalInfo": "Shipping Street",
+      "reference": "Shipping Street",
+      "number": 1
+    }
+  },
+  "payment": {
+    "method": "BOLETO",
+    "purchaseDate": "2020-04-30 15:32:00",
+    "approvedDate": "2020-04-30 15:32:00",
+    "totalAmount": 10,
+    "totalAmountPlusShipping": 20,
+    "totalDiscount": 1,
+    "installments": 1,
+    "address": {
+      "address": "Billing Street",
+      "neighborhood": "Billing Street",
+      "city": "Billing Street",
+      "state": "Billing Street",
+      "country": "Billing Street",
+      "zipCode": "Billing Street",
+      "additionalInfo": "Billing Street",
+      "reference": "Billing Street",
+      "number": 1
+    }
+  },
+  "status": {
+    "status": "CANCELED",
+    "updatedDate": "2020-04-30 15:32:00",
+    "message": "Menu Status - NEW",
+    "active": true
+  },
+  "customer": {
+    "name": "Luke Skywalker",
+    "documentNumber": "00005234000121",
+    "email": "luke@starwars.com",
+    "mobileNumber": "5511999999999"
+  },
+  "createdDate": "2020-04-30 15:32:00",
+  "products": [
+    {
+      "sku": "00001",
+      "name": "Item 1",
+      "quantity": 1,
+      "price": 10.0,
+      "discount": 1.0
+    }
+  ]
+}

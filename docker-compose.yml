@@ -1,0 +1,16 @@
+version: '3.1'
+
+services:
+
+  db:
+    container_name: menu-sun-api-db
+    image: mysql:5.6
+    command: --skip-grant-tables=ON
+    restart: always
+    environment:
+      MYSQL_USER: ${DB_USER}
+      MYSQL_PASSWORD: ${DB_PASSWORD}
+      MYSQL_ROOT_PASSWORD: ${DB_PASSWORD}
+      MYSQL_DATABASE: ${DB_NAME}
+    ports:
+      - 3306:3306

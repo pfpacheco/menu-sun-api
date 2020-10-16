@@ -1,0 +1,13 @@
+{
+  "orderId": "12345",
+  "request": "ok",
+  "sapReturn": {
+    "messageType": "string",
+    "messageClass": "string",
+    "messageNumber": "string",
+    "messageAdd1": "string",
+    "messageAdd2": "string",
+    "messageAdd3": "string",
+    "messageAdd4": "string"
+  }
+}

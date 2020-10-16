@@ -1,0 +1,30 @@
+{
+    "packageInfo": {
+        "header": {
+            "transactionId": "23122019021839_04GENERATED0119303664",
+            "serviceName": "nrCnpj=12329733000153&ppopcao=55&requisicao=9&opcao=13&idTabela=3&idPedidoFacil=11300002494&siteV2=S&unb=0810204&dtPedido=None&cdPedido=11300002494",
+            "credentials": {
+                "userId": "12329733000153",
+                "userDataAttr": {
+                    "unb": "0810204"
+                }
+            },
+            "token": {
+                "signedHash": "H4sIAAAAAAAAAAEQAe/+6L1GRp1zBYpBYdTrs5EXxpYeOECoam0f3tcZOwvLKMrk/jd4yQNc7Miz\nhiQgMJAcn4kcuT5R4icRmvSbgKQPe8GhTTuif6kCvJcCkkn1GyXPTGkwz5mA7X/9rDPLlX1nJjVJ\nJufz+lHVWptbqPfwuF5Z7xgKWdO5E2Coiog8OqVj6QLOFqJ3Q129gMV0yS/Agskuo9aKTJ8U+MkF\nz3rmlqCl6AHaV8ZNvVplSsfoUfEPlTrbhvWbKrZJWDCV5Qca2Q1LrhpWtWghd/d6B59Bfwxo7b1l\n6tT3i5euX3cDNtmX5xx9p3t/9mI3QKS1wO/P+0Ms+xpBt+TfF6BeS7NW1mkzVH9+N6H2y6ewVLTQ\n/pqTC4zBEAEAAA=="
+            }
+        },
+        "body": {
+            "data": {
+                "response": {
+                    "status": [
+                        {
+                            "cdErro": "3",
+                            "dsErro": "Pedido n�o encontrado",
+                            "cdResulAcesso": "23"
+                        }
+                    ]
+                }
+            }
+        }
+    }
+}

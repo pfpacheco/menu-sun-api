@@ -1,0 +1,8 @@
+pt:
+  seller_not_found_code: "Seller with code {} not found"
+  product_not_found_sku: "Product with sku {} not found"
+  product_not_found_id: "Product with id {} not found"
+  customer_not_found: "Customer with document {} not found"
+  pricing_not_found: "Pricing for customer document {} and product sku {} found"
+  customer_exists: "Customer with document {} already exists"
+  order_not_found: "Order with id [{}] not found"

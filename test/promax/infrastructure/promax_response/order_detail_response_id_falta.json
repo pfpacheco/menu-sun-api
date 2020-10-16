@@ -1,0 +1,79 @@
+{
+    "packageInfo": {
+        "header": {
+            "transactionId": "20122019113650_04GENERATED0565275793",
+            "serviceName": "nrCnpj=48906549000176&ppopcao=55&requisicao=9&opcao=13&siteV2=S&unb=0810204&idTabela=3&idPedidoFacil=11300015621",
+            "credentials": {
+                "userId": "48906549000176",
+                "userDataAttr": {
+                    "unb": "0810204"
+                }
+            },
+            "token": {
+                "signedHash": "H4sIAAAAAAAAAAEQAe/+6L1GRp1zBYpBYdTrs5EXxpYeOECoam0f3tcZOwvLKMrk/jd4yQNc7P27\nG/5iXRfAAfkkClZZfvIVITwjqMWrCcGhTTuif6kCm5TtZeox4ldQ/X4z2GnjuxLyPI+iStS3PM72\neghLdEdEWCjqVuajoF5Z7xgKWdO5E2Coiog8OqVj6QLOFqJ3Q129gMV0yS/Agskuo9aKTJ8U+MkF\nz3rmlqCl6AHaV8ZNvVplSsfoUfEPlTrbhvWbKrZJWDCV5Qca2Q1LrhpWtWgdyFTyItmunss+9ZaW\nvIsmi5euX3cDNtmX5xx9p3t/9mI3QKS1wO/P+0Ms+xpBt+TGPKxTBMQeQ06k2Mq9gG7Ly6ewVLTQ\n/pobIBZtEAEAAA=="
+            }
+        },
+        "body": {
+            "data": {
+                "response": {
+                    "produtos": [
+                        {
+                            "cdProduto": 9068,
+                            "nmProduto": "SK LT350SH12NP",
+                            "nmAbreviado": "SK LT350SH12NP",
+                            "dsUnidadeVenda": "CX",
+                            "vlUnitario": 23.88,
+                            "vlTotal": 716.4,
+                            "qtPedido": 30,
+                            "ftPaletizacao": 286,
+                            "dgProd": 8,
+                            "cdPromocao": 0,
+                            "cdCritica": 0,
+                            "dsCritica": "",
+                            "cdCombo": 0,
+                            "idFalta": "S",
+                            "origemPreco": ""
+                        }
+                    ],
+                    "detalhePedido": [
+                        {
+                            "notaFiscal": "-",
+                            "valorTotal": 716.4,
+                            "formaPagto": "BLOQUETO BANCARIO",
+                            "tipoMovimento": "VENDA",
+                            "origem": "Site",
+                            "dataEntrega": "17/12/2019",
+                            "dtVenctoBoleto": "",
+                            "dsStatusGeracao": "Concluï¿½do",
+                            "dsSituacaoPedido": "Pedido Promax Gerado",
+                            "idSemEstoque": "N",
+                            "idAtribuidoVDI": "N",
+                            "historicoImportacao": [
+                                {
+                                    "data": "16/12/2019",
+                                    "hora": "12:31:30",
+                                    "mensagem": "Importado"
+                                },
+                                {
+                                    "data": "16/12/2019",
+                                    "hora": "12:47:37",
+                                    "mensagem": "Importado"
+                                },
+                                {
+                                    "data": "16/12/2019",
+                                    "hora": "15:53:26",
+                                    "mensagem": "Importado"
+                                },
+                                {
+                                    "data": "16/12/2019",
+                                    "hora": "16:10:25",
+                                    "mensagem": "Importado"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            }
+        }
+    }
+}

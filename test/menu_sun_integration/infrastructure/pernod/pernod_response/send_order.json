@@ -1,0 +1,72 @@
+{
+  "reference": {
+    "idTenant": 2585,
+    "store": "Menu",
+    "source": "12345",
+    "system": {
+      "source": "Menu"
+    }
+  },
+  "shipping": {
+    "responsible": "seller",
+    "receiverName": "ShippingStreet",
+    "estimatedDeliveryDate":"2020-05-0115:32:00",
+    "provider": "Correios",
+    "service": "SEDEX",
+    "price": 10,
+    "address": {
+      "address": "ShippingStreet",
+      "neighborhood": "ShippingStreet",
+      "city": "ShippingStreet",
+      "state": "ShippingStreet",
+      "country": "ShippingStreet",
+      "zipCode": "ShippingStreet",
+      "additionalInfo": "ShippingStreet",
+      "reference": "ShippingStreet",
+      "number": 1
+    }
+  },
+  "payment": {
+    "method": "BOLETO",
+    "purchaseDate": "2020-04-3015:32:00",
+    "approvedDate": "2020-04-3015:32:00",
+    "totalAmount": 10,
+    "totalAmountPlusShipping": 20,
+    "totalDiscount": 2.0,
+    "installments": 1,
+    "address": {
+      "address": "BillingStreet",
+      "neighborhood": "BillingStreet",
+      "city": "BillingStreet",
+      "state": "BillingStreet",
+      "country": "BillingStreet",
+      "zipCode": "BillingStreet",
+      "additionalInfo": "BillingStreet",
+      "reference": "BillingStreet",
+      "number": 1
+    }
+  },
+  "status": {
+    "status": "pending",
+    "updatedDate": "2020-04-3015:32:00",
+    "message": "MenuStatus-PENDING",
+    "active": true
+  },
+  "customer": {
+    "name": "LukeSkywalker",
+    "documentNumber": "00005234000121",
+    "email": "luke@starwars.com",
+    "mobileNumber": "5511999999999"
+  },
+  "createdDate": "2020-04-3015:32:00",
+  "products": [
+    {
+      "sku": "00001",
+      "name": "Item1",
+      "quantity": 1,
+      "price": 11.0,
+      "discount": 1.0,
+      "shippingCost": 10.0
+    }
+  ]
+}

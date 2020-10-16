@@ -1,0 +1,66 @@
+{
+    "reference": {
+        "idTenant": 2585,
+        "store": "Menu",
+        "id": 771118684,
+        "source": "12345",
+        "system": {
+            "source": "menu"
+        }
+    },
+    "shipping": {
+        "responsible": "Seller",
+        "receiverName": "",
+        "address": {
+            "address": "ShippingStreet",
+            "neighborhood": "",
+            "city": "",
+            "state": "",
+            "country": "",
+            "zipCode": "",
+            "additionalInfo": "",
+            "reference": "",
+            "number": "111"
+        }
+    },
+    "payment": {
+        "method": "None",
+        "purchaseDate": "2020-05-12T00:22:05",
+        "approvedDate": "2020-05-12T00:22:05",
+        "totalAmount": 0,
+        "totalAmountPlusShipping": 0,
+        "totalDiscount": 0,
+        "installments": 1,
+        "address": {
+            "address": "Billing Street",
+            "neighborhood": "",
+            "city": "",
+            "state": "",
+            "country": "",
+            "zipCode": "",
+            "additionalInfo": "",
+            "reference": "",
+            "number": "111"
+        }
+    },
+    "status": {
+        "status": "Pending",
+        "updatedDate": "2020-05-11T01:13:24",
+        "active": true
+    },
+    "customer": {
+        "name": "Luke Skywalker",
+        "documentNumber": "000.000.000-00",
+        "mobileNumber": "011999999999",
+        "email": "lukeskywalker@starwars.com"
+    },
+    "products": [
+        {
+            "sku": "988",
+            "name": "Becks",
+            "quantity": 2,
+            "price": 10,
+            "discount": 0
+        }
+    ]
+}
